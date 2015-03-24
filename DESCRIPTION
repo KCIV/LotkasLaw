@@ -1,0 +1,10 @@
+Package: Lotkas
+Type: Package
+Title: Analyse library statistics using Lotkas Law
+Version: 1.0
+Date: 2015-03-16
+Author: Dr. Alon Friedman & Kenneth Buker
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line)
+License: GNU General Public License
+URL: 
