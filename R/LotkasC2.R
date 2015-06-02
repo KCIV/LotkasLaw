@@ -1,7 +1,7 @@
 LotkasC2 <-
-function(p,N)
+function(Sums,N)
 {
-    P <- p
+    P <- Sums[2]
     increm <- c(1:(P-1))
     sum <- sum(1/increm^N)
     part1 <- sum
