@@ -1,7 +1,7 @@
 LotkasN2 <-
-function(Sums,FullTable, n)
+function(Sums,FullTable)
 {
-    N <- n
+    N <- nrow(FullTable)
     xy <- Sums[5]
     loX <- Sums[3]
     loy <- Sums[4]
