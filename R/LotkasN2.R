@@ -2,9 +2,9 @@ LotkasN2 <-
 function(Sums,FullTable)
 {
     N <- nrow(FullTable)
-    xy <- Sums[5]
     loX <- Sums[3]
     loy <- Sums[4]
+    xy <- Sums[5]
     x2 <- Sums[6]
     loX2 <- loX^2
     top <- (N*xy) - (loX*loy)
