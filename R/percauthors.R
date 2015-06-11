@@ -1,8 +1,8 @@
 percauthors <-
-function(Table, Sum)
+function(Table, Sums)
 {
     justy <- Table[,2:2]
-    newcol <- justy/Sum
+    newcol <- justy/Sums[2]
     return(newcol)
     
 }
