@@ -3,7 +3,7 @@ function(Sums,N)
 {
     P <- Sums[2]
     increm <- c(1:(P-1))
-    sum <- sum(1/increm^N)
+    sum <- sum(1/(increm^N))
     part1 <- sum
     part2 <- 1/((N-1)*(P^(N-1)))
     part3 <- 1/(2*(P^N))
