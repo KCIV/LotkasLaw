@@ -1,5 +1,5 @@
-\name{Lotkas}
-\alias{Lotkas}
+\name{expected}
+\alias{expected}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
@@ -8,15 +8,18 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-Lotkas(X, Y)
+expected(Table, C, N)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{X}{
-%%     ~~Describe \code{X} here~~
+  \item{Table}{
+%%     ~~Describe \code{Table} here~~
 }
-  \item{Y}{
-%%     ~~Describe \code{Y} here~~
+  \item{C}{
+%%     ~~Describe \code{C} here~~
+}
+  \item{N}{
+%%     ~~Describe \code{N} here~~
 }
 }
 \details{
@@ -50,11 +53,11 @@ Lotkas(X, Y)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (X, Y) 
+function (Table, C, N) 
 {
-    Result <- X * X
-    Result <- Result * Y
-    return(Result)
+    value <- 1/(Table[, 1:1])^N
+    part2 <- C * value
+    return(part2)
   }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

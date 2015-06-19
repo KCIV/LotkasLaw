@@ -8,15 +8,15 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-percauthors(Table, Sum)
+percauthors(Table, Sums)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{Table}{
 %%     ~~Describe \code{Table} here~~
 }
-  \item{Sum}{
-%%     ~~Describe \code{Sum} here~~
+  \item{Sums}{
+%%     ~~Describe \code{Sums} here~~
 }
 }
 \details{
@@ -50,10 +50,10 @@ percauthors(Table, Sum)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (Table, Sum) 
+function (Table, Sums) 
 {
-    justy <- Table[, 2:2]
-    newcol <- justy/Sum
+    justy <- Table[, 1:1]
+    newcol <- justy/Sums[1]
     return(newcol)
   }
 }

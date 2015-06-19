@@ -8,7 +8,7 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-LotkasN2(Sums, FullTable, n)
+LotkasN2(Sums, FullTable)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,9 +17,6 @@ LotkasN2(Sums, FullTable, n)
 }
   \item{FullTable}{
 %%     ~~Describe \code{FullTable} here~~
-}
-  \item{n}{
-%%     ~~Describe \code{n} here~~
 }
 }
 \details{
@@ -53,16 +50,22 @@ LotkasN2(Sums, FullTable, n)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (Sums, FullTable, n) 
+function (Sums, FullTable) 
 {
-    N <- n
-    xy <- Sums[5]
-    loX <- Sums[3]
-    loy <- Sums[4]
-    x2 <- Sums[6]
-    loX2 <- loX^2
-    top <- (N * xy) - (loX * loy)
-    bottom <- (N * x2) - (loX2)
+    N <- nrow(FullTable)
+    print(N)
+    xy <- Sums[3]
+    print(xy)
+    loX <- Sums[1]
+    print(lox)
+    loy <- Sums[2]
+    print(loy)
+    x2 <- Sums[4]
+    lox2 <- lox^2
+    top <- (N * xy) - (lox * loy)
+    print(top)
+    bottom <- (N * x2) - (lox2)
+    print(bottom)
     Nfinal <- top/bottom
     return(Nfinal)
   }

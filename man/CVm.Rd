@@ -1,5 +1,5 @@
-\name{LotkasC}
-\alias{LotkasC}
+\name{CVm}
+\alias{CVm}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
@@ -8,15 +8,15 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-LotkasC(FullTable, N)
+CVm(value, Sums)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{FullTable}{
-%%     ~~Describe \code{FullTable} here~~
+  \item{value}{
+%%     ~~Describe \code{value} here~~
 }
-  \item{N}{
-%%     ~~Describe \code{N} here~~
+  \item{Sums}{
+%%     ~~Describe \code{Sums} here~~
 }
 }
 \details{
@@ -50,17 +50,12 @@ LotkasC(FullTable, N)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (FullTable, N) 
+function (value, Sums) 
 {
-    P <- nrow(FullTable)
-    increm <- c(1:(P - 1))
-    sum <- sum(1/increm^N)
-    part1 <- sum
-    part2 <- 1/((N - 1) * (P^(N - 1)))
-    part3 <- 1/(2 * (P^N))
-    part4 <- N/(24 * (P - 1)^(N + 1))
-    result <- 1/(part1 + part2 + part3 + part4)
-    return(result)
+    bottom <- sqrt(Sums[2])
+    top <- value
+    answer <- top/bottom
+    return(answer)
   }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

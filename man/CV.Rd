@@ -1,5 +1,5 @@
-\name{LotkasN}
-\alias{LotkasN}
+\name{CV}
+\alias{CV}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
@@ -8,15 +8,12 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-LotkasN(Sums, FullTable)
+CV(Sums)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{Sums}{
-%%     ~~Describe \code{Sums} here~~
-}
-  \item{FullTable}{
-%%     ~~Describe \code{FullTable} here~~
+%%     ~~Describe \code{Sumy} here~~
 }
 }
 \details{
@@ -50,18 +47,12 @@ LotkasN(Sums, FullTable)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (Sums, FullTable) 
+function (Sums) 
 {
-    N <- nrow(FullTable)
-    xy <- Sums[5]
-    loX <- Sums[3]
-    loy <- Sums[4]
-    x2 <- Sums[6]
-    loX2 <- loX^2
-    top <- (N * xy) - (loX * loy)
-    bottom <- (N * x2) - (loX2)
-    Nfinal <- top/bottom
-    return(Nfinal)
+    bottom <- sqrt(Sums[2])
+    top <- 1.63
+    answer <- top/bottom
+    return(answer)
   }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

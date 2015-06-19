@@ -8,12 +8,12 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-LotkasC2(p, N)
+LotkasC2(Sums, N)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{p}{
-%%     ~~Describe \code{p} here~~
+  \item{Sums}{
+%%     ~~Describe \code{Sums} here~~
 }
   \item{N}{
 %%     ~~Describe \code{N} here~~
@@ -50,9 +50,9 @@ LotkasC2(p, N)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (p, N) 
+function (Sums, N) 
 {
-    P <- p
+    P <- Sums[2]
     increm <- c(1:(P - 1))
     sum <- sum(1/increm^N)
     part1 <- sum
