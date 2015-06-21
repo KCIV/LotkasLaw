@@ -1,7 +1,8 @@
 expected <- function(Table,C,N)
 {
-  value <- 1/(Table[,2:2])^N
-  part2 <- C*value
+  value <- Table[,1:1]^N
+  nvalue <- 1/value
+  part2 <- C*nvalue
   return(part2)
   
 }
