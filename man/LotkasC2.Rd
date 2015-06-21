@@ -1,5 +1,5 @@
-\name{LotkasC2}
-\alias{LotkasC2}
+\name{LotkasC}
+\alias{LotkasC}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
@@ -8,7 +8,7 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-LotkasC2(Sums, N)
+LotkasC(N)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -50,16 +50,17 @@ LotkasC2(Sums, N)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (Sums, N) 
+function (N) 
 {
-    P <- Sums[2]
+    P <- 20
     increm <- c(1:(P - 1))
     sum <- sum(1/increm^N)
     part1 <- sum
     part2 <- 1/((N - 1) * (P^(N - 1)))
     part3 <- 1/(2 * (P^N))
     part4 <- N/(24 * (P - 1)^(N + 1))
-    result <- 1/(part2 + part2 + part3 + part4)
+    result <- (part1 + part2 + part3 + part4)
+    result <- 1/result
     return(result)
   }
 }
