@@ -3,8 +3,8 @@ Type: Package
 Title: Analyse library statistics using Lotkas Law
 Version: 1.0
 Date: 2015-03-16
-Author: Dr. Alon Friedman & Kenneth Buker
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Author:Kenneth Buker & Dr. Alon Friedman
+Maintainer: KCIV4@att.net
+Description: Package to run Lotkas Law on library statistics
 License: GNU General Public License
-URL: 
+URL: https://github.com/KCIV/LotkasLaw
